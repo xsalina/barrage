@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹幕</title>
+    <link rel="stylesheet" href="css/reset.css">
+    
+</head>
+<style>
+    .wrap {
+        position: relative;
+        width: 100%;
+        height: 560px;
+        margin: auto;
+        background-color: blanchedalmond;
+    }
+
+    .wrap .w-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 530px;
+
+    }
+
+    .wrap .text {
+        width: 400px;
+        height: 30px;
+        border: 1px solid gray;
+        padding-left: 20px;
+        outline: none;
+        vertical-align: middle;
+
+    }
+
+    .w-bottom .btn {
+        display: inline-block;
+        padding: 4px 12px;
+        background-color: brown;
+        color: white;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        vertical-align: middle;
+        box-shadow: 5px 0px 2px 5px rosybrown;
+        cursor: pointer;
+    }
+
+    .wrap .move {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="w-bottom">
+            <input class="text" type="text" placeholder="请输入您要发表的评论">
+            <div class="btn">提交评论</div>
+        </div>
+        <div class="list">
+            <div class="move">好好学习</div>
+            <div class="move">天天向上</div>
+            <div class="move">天天向上</div>
+            <div class="move">好好学习</div>
+
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
